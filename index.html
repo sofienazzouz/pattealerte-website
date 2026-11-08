@@ -3,42 +3,210 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f7f1">
-  <meta name="description" content="PatteAlerte vous aide à garder les informations de santé, les vaccinations et les rappels de vos animaux au même endroit.">
-  <title>PatteAlerte — Le carnet de santé de vos animaux</title>
+  <title>Patte Alerte — Le carnet de santé de votre animal</title>
+  <meta name="description" content="Patte Alerte réunit le carnet de santé, les rappels, les numéros d'urgence et les documents de votre animal sur votre iPhone. Sans compte, sans publicité, vos données restent sur votre téléphone.">
+  <meta name="theme-color" content="#F7F5F0">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="fr" href="https://sofienazzouz.github.io/pattealerte-website/">
+  <link rel="alternate" hreflang="en" href="https://sofienazzouz.github.io/pattealerte-website/en/">
+  <meta property="og:title" content="Patte Alerte — Le carnet de santé de votre animal">
+  <meta property="og:description" content="Rappels, numéros d'urgence, fiche pour le véto : l'essentiel de votre animal dans votre poche. Sans compte, sans publicité.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header wrap">
-    <a class="brand" href="./" aria-label="PatteAlerte, accueil"><span class="brand-mark">✳</span> PatteAlerte</a>
-    <nav aria-label="Navigation principale"><a href="#avantages">L’application</a><a href="privacy/">Confidentialité</a></nav>
-  </header>
-  <main>
-    <section class="hero wrap">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="dot"></span> Pour ceux qui prennent soin d’eux</p>
-        <h1>Leur santé,<br><em>bien entourée.</em></h1>
-        <p class="lead">Vaccinations, rendez-vous et petits souvenirs : gardez l’essentiel de la vie de vos animaux à portée de patte.</p>
-        <a class="button" href="#avantages">Découvrir PatteAlerte <span aria-hidden="true">↘</span></a>
-        <p class="micro">Vos informations restent sur votre appareil.</p>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <span class="logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><circle cx="5.5" cy="10" r="2"/><circle cx="9" cy="5.5" r="2"/><circle cx="15" cy="5.5" r="2"/><circle cx="18.5" cy="10" r="2"/><path d="M12 12c-3 0-5.5 3.5-5.5 6 0 1.7 1.3 2.5 3 2.5 1 0 1.6-.5 2.5-.5s1.5.5 2.5.5c1.7 0 3-.8 3-2.5 0-2.5-2.5-6-5.5-6z"/></svg></span>
+      Patte Alerte
+    </a>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#confidentialite">Confidentialité</a>
+      <a href="#faq">FAQ</a>
+      <a href="support/">Support</a>
+      <a class="lang" href="en/" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Pour iPhone · Chiens, chats et tous les autres</p>
+      <h1>Tout ce qui compte pour votre animal, <em>dans votre poche.</em></h1>
+      <p class="lead">Carnet de santé, rappels de vaccins et de vermifuges, numéros d'urgence et fiche à montrer au vétérinaire. Simple, calme, et vos données restent sur votre téléphone.</p>
+      <div class="actions">
+        <!-- TODO : remplacer href par le lien App Store (https://apps.apple.com/app/id…) dès que la fiche existe -->
+        <a class="store" href="#telecharger">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          <span><small>Bientôt sur</small><strong>l'App Store</strong></span>
+        </a>
+        <a class="btn btn-outline" href="#fonctionnalites">Voir les fonctionnalités</a>
       </div>
-      <div class="hero-art" aria-label="Illustration d’un chien et d’un chat">
-        <div class="sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="pet-card"><div class="card-top"><span>LEUR CARNET</span><span>✳</span></div><div class="pet-illustration"><div class="cat"><i></i></div><div class="dog"><i></i></div></div><div class="card-bottom"><span>Tout va bien.</span><span class="tiny-paw">♥</span></div></div>
-        <span class="spark spark-a">✳</span><span class="spark spark-b">✦</span><span class="float-note">Un rappel<br>au bon moment <b>↗</b></span>
+      <ul class="chips" aria-label="Engagements">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sans publicité</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sans compte</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fonctionne hors ligne</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Disponible en 7 langues</li>
+      </ul>
+    </div>
+
+    <div class="phone" role="img" aria-label="Écran d'accueil de l'application : prochain rappel de vaccin dans 6 jours, numéros d'urgence et bouton « Appeler mon véto ».">
+      <div class="screen" aria-hidden="true">
+        <div><div class="date">Samedi 8 novembre</div><div class="hello">Bonjour</div></div>
+        <div class="pills"><span class="pill on">Rocky · chien</span><span class="pill">Mimi · chat</span></div>
+        <div class="next">
+          <b>PROCHAIN RAPPEL</b>
+          <div class="big">6 <span>jours</span></div>
+          <strong>Rappel de vaccin · Rocky</strong>
+          <span class="muted">14 novembre</span>
+        </div>
+        <div class="line">Vermifuge <span>2 déc.</span></div>
+        <div class="line">Antiparasitaire <span>20 déc.</span></div>
+        <div class="calls">
+          <div><span class="bubble red"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>Mon véto</div>
+          <div><span class="bubble">VG</span>De garde</div>
+          <div><span class="bubble">AP</span>Antipoison</div>
+          <div><span class="bubble">LÉ</span>Pet-sitter</div>
+        </div>
+        <div class="call">Appeler mon véto</div>
       </div>
-    </section>
-    <section class="strip"><div class="wrap strip-inner"><span>POUR LES PETITS ET LES GRANDS COMPAGNONS</span><span>CHIENS · CHATS · ET TOUS LES AUTRES</span></div></section>
-    <section class="features wrap" id="avantages">
-      <div class="section-heading"><p class="eyebrow">SIMPLE AU QUOTIDIEN</p><h2>Tout ce qui compte,<br><em>au même endroit.</em></h2></div>
-      <div class="feature-grid">
-        <article class="feature"><span class="feature-icon mint">✳</span><h3>Leur carnet de santé</h3><p>Retrouvez vaccinations, traitements, poids et informations utiles dans un seul espace.</p></article>
-        <article class="feature"><span class="feature-icon peach">◷</span><h3>Des rappels bien pensés</h3><p>Programmez des rappels sur votre iPhone pour les prochaines échéances.</p></article>
-        <article class="feature"><span class="feature-icon lilac">▧</span><h3>Leurs souvenirs à garder</h3><p>Ajoutez photos et documents pour garder leur histoire près de vous.</p></article>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="comment">
+    <div class="wrap section">
+      <div class="section-head">
+        <p class="eyebrow">Comment ça marche</p>
+        <h2 id="comment">Trois étapes, c'est tout</h2>
       </div>
-    </section>
-    <section class="privacy-callout"><div class="wrap callout-inner"><span class="shield">♡</span><div><p class="eyebrow">VOTRE VIE PRIVÉE, AUSSI</p><h2>Leurs données restent<br>à la maison.</h2><p>PatteAlerte ne demande pas de compte. Les informations de l’application sont enregistrées sur votre appareil.</p><a class="text-link" href="privacy/">Lire la politique de confidentialité <span>→</span></a></div><span class="callout-flower">✳</span></div></section>
-  </main>
-  <footer class="wrap footer"><a class="brand" href="./"><span class="brand-mark">✳</span> PatteAlerte</a><span>Fait avec soin, pour eux.</span><a href="privacy/">Politique de confidentialité</a><small>© <span id="year">2026</span> PatteAlerte</small></footer>
+      <ol class="steps">
+        <li><h3>Ajoutez votre animal</h3><p>Son nom, sa photo, sa race, sa puce et le numéro de votre vétérinaire.</p></li>
+        <li><h3>Recopiez son carnet</h3><p>Vaccins, vermifuges, visites : notez les dates du carnet du véto, ou scannez-le pour les retrouver plus vite.</p></li>
+        <li><h3>Laissez-vous rappeler</h3><p>Une notification arrive au bon moment. Le prochain rendez-vous s'affiche aussi sur l'écran d'accueil et dans le widget.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="wrap section" id="fonctionnalites" aria-labelledby="fonctions">
+    <div class="section-head">
+      <p class="eyebrow">Fonctionnalités</p>
+      <h2 id="fonctions">Le quotidien et les moments importants, au même endroit</h2>
+    </div>
+    <div class="features">
+      <article class="feature">
+        <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></span>
+        <h3>Carnet de santé</h3>
+        <p>Vaccins, vermifuges, antiparasitaires, visites, poids et traitements en cours. Scannez une page du carnet : l'app repère les dates pour vous.</p>
+      </article>
+      <article class="feature">
+        <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+        <h3>Rappels au bon moment</h3>
+        <p>Notifications pour les rappels et les soins réguliers, widget sur l'écran d'accueil, ajout au Calendrier et raccourcis Siri.</p>
+      </article>
+      <article class="feature">
+        <span class="icon red"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <h3>Numéros d'urgence en un geste</h3>
+        <p>Votre vétérinaire, le véto de garde, le centre antipoison, le pet-sitter : enregistrez-les une fois, appelez-les en un appui.</p>
+      </article>
+      <article class="feature">
+        <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+        <h3>Fiches prêtes à montrer</h3>
+        <p>Une fiche en grands caractères à montrer au vétérinaire, et une fiche complète à partager avec la personne qui garde votre animal.</p>
+      </article>
+      <article class="feature">
+        <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></svg></span>
+        <h3>Documents, album et journal</h3>
+        <p>Ordonnances, analyses, carte d'assurance, photos et vidéos, et un journal pour noter ce que vous observez avant d'en parler au véto.</p>
+      </article>
+      <article class="feature">
+        <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <h3>S'il se perd</h3>
+        <p>Créez en quelques secondes une affiche « animal perdu » avec sa photo et votre numéro, et gardez à portée de main le lien vers l'I-CAD.</p>
+      </article>
+    </div>
+    <p class="muted" style="margin-top: 24px">Aussi : suivi des dépenses, sauvegarde complète dans un fichier que vous gardez, conseils pratiques pour le quotidien.</p>
+    <ul class="species" aria-label="Animaux pris en charge">
+      <li>Chiens</li><li>Chats</li><li>Lapins</li><li>Cochons d'Inde</li><li>Furets</li><li>Rongeurs</li><li>Oiseaux</li><li>Reptiles</li><li>Poissons</li><li>Chevaux et ânes</li><li>Animaux de la ferme</li>
+    </ul>
+  </section>
+
+  <section class="band" id="confidentialite" aria-labelledby="vie-privee">
+    <div class="wrap section">
+      <div class="section-head">
+        <p class="eyebrow">Confidentialité</p>
+        <h2 id="vie-privee">Ce qui reste sur votre téléphone, et ce qui en sort</h2>
+        <p class="lead">Patte Alerte n'a pas de serveur. Nous ne voyons jamais les informations de votre animal.</p>
+      </div>
+      <div class="privacy-grid">
+        <div class="stays">
+          <h3>Reste sur l'iPhone</h3>
+          <ul><li>Profils, carnet de santé, rappels</li><li>Photos, vidéos et documents</li><li>Numéros d'urgence, journal, dépenses</li></ul>
+        </div>
+        <div class="choice">
+          <h3>Sort seulement si vous le décidez</h3>
+          <ul><li>La sauvegarde que vous exportez</li><li>Les fiches que vous partagez</li><li>Les rendez-vous que vous ajoutez au Calendrier</li></ul>
+        </div>
+        <div class="never">
+          <h3>Jamais</h3>
+          <ul><li>Pas de compte à créer</li><li>Pas de publicité</li><li>Pas de traceur ni d'outil de mesure d'audience</li><li>Aucune donnée vendue</li></ul>
+        </div>
+      </div>
+      <p style="margin-top: 24px"><a href="privacy/">Lire la politique de confidentialité</a></p>
+    </div>
+  </section>
+
+  <section class="wrap section" id="faq" aria-labelledby="questions">
+    <div class="section-head">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2 id="questions">Bon à savoir</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Est-ce que l'application remplace mon vétérinaire ?</summary><p>Non. Patte Alerte est un carnet personnel : il garde ce que vous saisissez et vous rappelle les dates que vous avez choisies. Il ne donne aucun avis médical. Pour toute question de santé, et en cas d'urgence, appelez votre vétérinaire.</p></details>
+      <details><summary>Où sont stockées mes données ?</summary><p>Uniquement sur votre iPhone. Si vous changez de téléphone, exportez une sauvegarde depuis les Réglages de l'app, puis importez-la sur le nouveau.</p></details>
+      <details><summary>Faut-il une connexion Internet ?</summary><p>Non. Toute l'application fonctionne hors ligne, y compris les numéros d'urgence et les fiches.</p></details>
+      <details><summary>Est-ce gratuit ?</summary><p>Oui, l'essentiel est gratuit et sans publicité. Une option payante, Patte Alerte+, ajoutera des fonctions avancées ; son prix sera indiqué clairement sur l'App Store.</p></details>
+      <details><summary>Dans quelles langues ?</summary><p>Français, anglais, espagnol, allemand, italien, portugais et arabe. L'application suit la langue de votre iPhone, et vous pouvez la changer dans les Réglages.</p></details>
+    </div>
+    <p style="margin-top: 20px"><a href="support/">Toutes les questions et le support</a></p>
+
+    <div class="vet-note" role="note">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+      <p>Patte Alerte ne remplace pas un vétérinaire. En cas d'urgence, appelez votre vétérinaire ou le vétérinaire de garde.</p>
+    </div>
+  </section>
+
+  <section class="wrap" id="telecharger" aria-labelledby="dl">
+    <div class="cta">
+      <h2 id="dl">Bientôt sur l'App Store</h2>
+      <p>Patte Alerte arrive sur iPhone. Gratuit, sans compte et sans publicité.</p>
+      <!-- TODO : lien App Store -->
+      <a class="store" href="#telecharger">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        <span><small>Bientôt sur</small><strong>l'App Store</strong></span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><circle cx="5.5" cy="10" r="2"/><circle cx="9" cy="5.5" r="2"/><circle cx="15" cy="5.5" r="2"/><circle cx="18.5" cy="10" r="2"/><path d="M12 12c-3 0-5.5 3.5-5.5 6 0 1.7 1.3 2.5 3 2.5 1 0 1.6-.5 2.5-.5s1.5.5 2.5.5c1.7 0 3-.8 3-2.5 0-2.5-2.5-6-5.5-6z"/></svg></span>Patte Alerte</a>
+    <nav aria-label="Liens de bas de page">
+      <a href="privacy/">Confidentialité</a>
+      <a href="support/">Support</a>
+      <a href="support/#mentions">Mentions légales</a>
+      <a href="en/" hreflang="en" lang="en">English</a>
+    </nav>
+    <p class="disclaimer">© 2026 Patte Alerte · Carnet personnel : ne fournit aucun avis médical et ne remplace pas un vétérinaire.</p>
+  </div>
+</footer>
 </body>
 </html>
